@@ -1,38 +1,85 @@
 .App {
   text-align: center;
+  color: aliceblue;
+  background-color: black;
+  padding: 60px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  font-size: 33px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* search input field container */
+.search-box {
+  position: relative;
+  top: 50px;
+  width: 100%;
+  margin: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.search-box i {
+  position: absolute;
+  left: 12px;
+  top: 20px;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* controls the all type search input fields */
+input[type="search"] {
+  display: inline-block;
+  background-color: lightgrey;
+  width: 100%;
+  font-size: 1.5rem;
+  color: black;
+  padding-left: 2.5rem;
+  padding-right: 1rem;
+  padding-bottom: 0.2rem;
+  outline: none;
+  border: none;
+  border-radius: 0px 10 0px 10;
+}
+
+[type="button"],
+[type="submit"] {
+  cursor: pointer;
+  padding-left: 40px;
+  color: black;
+  font-size: 1.5rem;
+  background-color: lightgrey;
+  width: 15%;
+  border: none;
+  text-align: center;
+  border-radius: 0px 10 0px 10;
+}
+[type="button"]:hover {
+  background-color: white;
+}
+
+.row {
+  padding-top: 100px;
+
+}
+@media only screen and (max-width: 874px) {
+  input[type="search"] {
+    width: 100%;
+  
   }
-  to {
-    transform: rotate(360deg);
+  [type="button"],
+[type="submit"] {
+ 
+  width: 25%;
+ 
+}
+}
+@media only screen and (max-width: 600px) {
+ 
+  input[type="search"] {
+    width: 100%;
+  
   }
+  [type="button"],
+[type="submit"] {
+ 
+  width: 35%;
+ 
+}
 }
